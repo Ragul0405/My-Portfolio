@@ -1,31 +1,27 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.14a7a464.css",
-    "main.js": "/My-Portfolio/static/js/main.18d8e026.js",
+    "main.css": "/My-Portfolio/static/css/main.b983d748.css",
+    "main.js": "/My-Portfolio/static/js/main.613e2cc4.js",
     "static/media/r-logo.png": "/My-Portfolio/static/media/r-logo.b63fc50ac800e2db7b9e.png",
     "static/media/firstt.png": "/My-Portfolio/static/media/firstt.7c44690e15de2349c61c.png",
     "static/media/insta.png": "/My-Portfolio/static/media/insta.9bde027d119ed577f66b.png",
+    "static/media/Ragul_Resume.pdf": "/My-Portfolio/static/media/Ragul_Resume.180869414cb7329d1bc8.pdf",
     "static/media/logo512.png": "/My-Portfolio/static/media/logo512.94f1893157e2424ffd28.png",
-    "static/media/calculator.png": "/My-Portfolio/static/media/calculator.bd21db65f375eb42b083.png",
-    "static/media/zoho.png": "/My-Portfolio/static/media/zoho.fc1f1c0de33ad49b25a2.png",
-    "static/media/Bus-Booking.png": "/My-Portfolio/static/media/Bus-Booking.3a526f1576aa453d3b85.3a526f1576aa453d3b85.png",
-    "static/media/eCommerce.jpg": "/My-Portfolio/static/media/eCommerce.7522f459506c8acd5550.jpg",
-    "static/media/banksystem.png": "/My-Portfolio/static/media/banksystem.88f65f84473a74a74c90.88f65f84473a74a74c90.png",
-    "static/media/RAGUL_MCA_2024_CGPA-7.4_Python Full Stack..pdf": "/My-Portfolio/static/media/RAGUL_MCA_2024_CGPA-7.4_Python Full Stack..bf513abc62d99dbefefc.pdf",
+    "static/media/work1.png": "/My-Portfolio/static/media/work1.454b69f1f01f4826e09d.png",
+    "static/media/web.png": "/My-Portfolio/static/media/web.0afdced445e0b7a39264.png",
     "static/media/chat.png": "/My-Portfolio/static/media/chat.dc2ebd2c230393da37ee.png",
     "static/media/download.png": "/My-Portfolio/static/media/download.8544f87857a54578bb15.png",
     "static/media/nakuru.png": "/My-Portfolio/static/media/nakuru.c6566fb7308097efa3c8.png",
-    "static/media/webapp.png": "/My-Portfolio/static/media/webapp.679466b5242a1a1f0481.png",
-    "static/media/web.png": "/My-Portfolio/static/media/web.1c5edb9346ae3737a0ea.png",
     "static/media/in.png": "/My-Portfolio/static/media/in.63b96b9ea7fdfd7a5ee0.png",
     "static/media/github.png": "/My-Portfolio/static/media/github.4432f0428363b4e194bf.png",
+    "static/media/webapp.png": "/My-Portfolio/static/media/webapp.f10d5f87426db3d8a6b5.png",
     "static/media/sql.png": "/My-Portfolio/static/media/sql.4f8290bab6befc9202c0.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.14a7a464.css.map": "/My-Portfolio/static/css/main.14a7a464.css.map",
-    "main.18d8e026.js.map": "/My-Portfolio/static/js/main.18d8e026.js.map"
+    "main.b983d748.css.map": "/My-Portfolio/static/css/main.b983d748.css.map",
+    "main.613e2cc4.js.map": "/My-Portfolio/static/js/main.613e2cc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.14a7a464.css",
-    "static/js/main.18d8e026.js"
+    "static/css/main.b983d748.css",
+    "static/js/main.613e2cc4.js"
   ]
 }
