@@ -1,0 +1,146 @@
+/* Sticky navbar */
+.navparent {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: rgb(30, 30, 30);
+    height: 5rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    object-fit: cover;
+    width: 60px;
+    margin-top: 5px;
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Menu links container */
+.menu {
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.home, .about, .service, .projects, .contact {
+    margin: 0 16px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-bottom: 9px;
+    transition: color 0.3s ease;
+}
+
+.home:hover, .about:hover, .service:hover, .projects:hover, .contact:hover {
+    color: #ff004f;
+    padding-bottom: 0.5rem;   
+    border-bottom: 3px solid #ff004f;
+}
+
+
+/* Contact button */
+.navbtn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 5px 13px;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbtn:hover {
+    background-color: #ff004f;
+}
+
+.navconbtn {
+    width: 30px;
+    margin-right: 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    /* Hide menu and display hamburger icon */
+    .menu {
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        background-color: rgb(30, 30, 30);
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .home, .about, .service, .projects, .contact {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .navbtn {
+        display: none; /* Hides the Contact Me button on mobile */
+    }
+}
+.active{
+    color: #ff004f;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #ff004f;
+}
+.ragul{
+    font-family: sans-serif;
+    display: none;
+    margin-top: 12px;
+}
+.dot{
+    color: #ff004f; margin-left: 8px;
+}
+@media (max-width: 480px) {
+    .navconbtn {
+        display: none;
+    }
+    .ragul{
+        font-family: sans-serif;
+        display: flex
+    }
+}
+.navbar a {
+    transition: 0.3s;
+}

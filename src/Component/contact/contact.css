@@ -1,0 +1,140 @@
+.contactdesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+    color: white; 
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contactform {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    max-width: 40rem;
+    background-color: rgb(30, 30, 30);
+    padding: 2rem;
+    border-radius: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contactpagetitle {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.namee, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 35rem; 
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    background: rgb(40, 40, 40);
+    transition: background-color 0.3s ease;
+}
+
+.namee:focus, .email:focus, .msg:focus {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Submit button styling */
+.submitbtn {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #ff004f;;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submitbtn:hover {
+    background-color: #ff004f;;
+}
+
+/* Social media links styling */
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.link {
+    width: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Contact form container */
+    .contactform {
+        padding: 1.5rem;
+        max-width: 90vw; /* Make form width more flexible */
+    }
+
+    /* Adjust input field widths */
+    .namee, .email, .msg {
+        max-width: 90%; /* Allow the form to take up more width on small screens */
+    }
+
+    /* Adjust title font size */
+    .contactpagetitle {
+        font-size: 2.2rem;
+    }
+    
+    /* Adjust social media icons */
+    .links {
+        justify-content: space-around;
+    }
+
+    .link {
+        width: 25px; /* Make the social media icons smaller */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust form container width on very small screens */
+    .contactform {
+        width: 95vw;
+        padding: 1rem;
+    }
+
+    /* Title and text adjustments */
+    .contactpagetitle {
+        font-size: 1.8rem;
+    }
+
+    .contactdesc {
+        font-size: 1rem;
+    }
+
+    .submitbtn {
+        padding: 0.8rem 1.8rem;
+    }
+
+    .link {
+        width: 20px; /* Further reduce size of social icons */
+    }
+}

@@ -1,0 +1,258 @@
+/* Background Gradient like Intro */
+#about {
+  padding: 80px 5%;
+  color: #f1f1f1;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.about-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Container flex */
+.about-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image wrapper */
+.about-image-wrapper {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.about-image-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 0, 79, 0.7);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 0, 79, 0.6);
+}
+
+/* Content */
+.about-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-description {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #ddd;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Tabs container */
+.tab-controls {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Tab buttons with animated underline and background fill */
+.tab-button {
+  position: relative;
+  padding: 12px 28px;
+  border: 2px solid #ff004f;
+  background: transparent;
+  color: #ff004f;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease, background-color 0.4s ease;
+  outline-offset: 2px;
+  outline-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.tab-button .underline {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  transition: width 0.35s ease, left 0.35s ease;
+  border-radius: 10px;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  color: #fff;
+}
+
+.tab-button:hover .underline,
+.tab-button.active .underline {
+  width: 100%;
+  left: 0;
+}
+
+/* Background fill on active */
+.tab-button.active {
+  background: #ff004f;
+}
+
+/* Tab content fade animations */
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Tab content */
+.tab-content {
+  margin-top: 20px;
+  color: #eee;
+  min-height: 160px; /* prevents jumping when switching tabs */
+}
+
+/* List styling for Education & Experience */
+.tab-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.tab-list li {
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 4px solid #ff004f;
+  font-weight: 500;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.tab-list li:hover {
+  color: #fff;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.skill-category {
+  flex: 1 1 200px;
+  background-color: #2a2a2a;
+  padding: 1.25rem 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 0, 79, 0.25);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 0, 79, 0.45);
+}
+
+.skill-category h4 {
+  margin-bottom: 0.75rem;
+  color: #ff004f;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+}
+
+.skill-category p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #about {
+    padding: 60px 3%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image-wrapper {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .about-description {
+    text-align: center;
+  }
+
+  .tab-controls {
+    justify-content: center;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-image-wrapper {
+    display: none;
+  }
+
+  .tab-button {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}

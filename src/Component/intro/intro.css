@@ -1,0 +1,132 @@
+/* ========== Section Layout ========== */
+#intro {
+  width: 100%;
+  padding: 80px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ========== Inner Content ========== */
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ========== Text Section ========== */
+.text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hello {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.iam {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.name {
+  color: #ff004f;
+}
+
+.intopara {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 600px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/* ========== Buttons ========== */
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hirebtn {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 20px;
+  border: 2px solid #ff004f;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.hirebtn:hover {
+  background-color: #ff004f;
+  color: #fff;
+}
+
+.btnicon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* ========== Profile Image ========== */
+.profile-img {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 250px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    display: none;
+  }
+
+  .iam {
+    font-size: 2rem;
+  }
+
+  .intopara {
+    font-size: 0.95rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hirebtn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}

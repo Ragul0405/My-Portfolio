@@ -1,0 +1,122 @@
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skilltitle {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+  color: #ff004f;
+}
+
+.skilldes {
+  font-weight: 300;
+  font-size: 1.2rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.skillbars {
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 80%;
+  text-align: left;
+}
+
+.skilbar {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  /* background: rgb(50, 50, 50); */
+  box-shadow: 0 4px 12px rgba(255, 0, 79, 0.3);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.skilbar:hover {
+  border-color: #ff004f;
+  box-shadow: 0 0 12px 3px #ff004f;
+  /* background: rgb(50, 50, 50); keep same background, no fill change */
+}
+
+.skillbarimg {
+  object-fit: contain;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 1.5rem;
+  filter: drop-shadow(0 0 4px #ff004f);
+  transition: filter 0.3s ease;
+}
+
+.skilbar:hover .skillbarimg {
+  filter: drop-shadow(0 0 8px #ff004f);
+}
+
+.skillbartext h2 {  
+  margin: 0 0 0.4rem 0;
+  font-size: 1.4rem;
+  color: #ff004f;
+}
+
+.skilbar p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ddd;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+  .skillbartext > p {
+    font-size: 1rem;
+  }
+
+  .skillbartext h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #skills {
+    margin-top: 120px;
+    padding: 0 0.5rem;
+  }
+
+  .skilbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .skillbarimg {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .skillbartext h2 {
+    font-size: 1.3rem;
+  }
+
+  .skillbartext > p {
+    font-size: 0.95rem;
+  }
+}
