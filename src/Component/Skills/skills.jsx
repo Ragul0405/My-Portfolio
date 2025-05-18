@@ -7,7 +7,7 @@ import sql from '../Skills/sql.png';
 function Skills() {
   return (
     <section id='skills'>
-      <span className="skilltitle">What I do</span>br
+      <span className="skilltitle">What I do</span>
       <span className="skilldes">
         I am a skilled and passionate backend developer specializing in building robust, scalable server-side applications and APIs. 
         I have expertise in Python, Django, REST APIs, and working with relational databases like PostgreSQL and MySQL.
